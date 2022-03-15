@@ -1,0 +1,30 @@
+.step {
+	margin: 0;
+	text-align: center;
+
+	&__icon-box { // .step__icon-box
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 111px;
+		height: 111px;
+		margin: 0 auto 21px;
+		border-radius: 50%;
+		background-color: $color-light-green;
+	}
+
+	&__icon { // .step__icon
+		transform: translateY(3px);
+	}
+
+	&__title { // .step__title
+		margin-top: 0;
+		margin-bottom: 4px;
+		font-size: 30px;
+		font-weight: 500;
+	}
+
+	&__text { // .step__text
+		margin-bottom: 0;
+	}
+}

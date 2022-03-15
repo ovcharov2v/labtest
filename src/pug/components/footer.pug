@@ -1,0 +1,54 @@
+footer.footer
+	.container
+		.footer__row
+			.footer__col
+				a.footer__logo-link(href="/", title="To home page")
+					picture
+						source(srcset='images/footer/logo.webp', type="image/webp")
+						img.footer__logo(src='images/footer/logo.png', alt="")
+				p.footer__description Powerful Freelance Marketplace System with ability to change the Users (Freelancers & Clients)
+				ul.footer__social-links.social-links
+					li.social-links__item
+						a.social-links__link(href="/", target="_blank", title="Link to instagram")
+							include ../../images/footer/instagram.svg
+					li.social-links__item
+						a.social-links__link.social-links__link--twitter(href="/", target="_blank", title="Link to twitter")
+							include ../../images/footer/twitter.svg
+					li.social-links__item
+						a.social-links__link(href="/", target="_blank", title="Link to facebook")
+							include ../../images/footer/facebook.svg
+			.footer__nav-col
+				p.footer__title For Clients
+				ul.footer__nav-list
+					li.footer__nav-list-item
+						a.footer__nav-link(href="/") Find Freelancers
+					li.footer__nav-list-item
+						a.footer__nav-link(href="/") Post Project
+					li.footer__nav-list-item
+						a.footer__nav-link(href="/") Refund Policy
+					li.footer__nav-list-item
+						a.footer__nav-link(href="/") Privacy Policy
+			.footer__nav-col
+				p.footer__title For Freelancers
+				ul.footer__nav-list
+					li.footer__nav-list-item
+						a.footer__nav-link(href="/") Find Work
+					li.footer__nav-list-item
+						a.footer__nav-link(href="/") Create Account
+			.footer__nav-col
+				p.footer__title Call Us
+				ul.footer__nav-list.footer__nav-list--contacts
+					li.footer__nav-list-item
+						img.footer__nav-icon(src="images/footer/location.svg", alt="")
+						| Kenya
+					li.footer__nav-list-item
+						img.footer__nav-icon(src="images/footer/phone.svg", alt="")
+						a.footer__nav-link(href="tel:+25470000000")
+							| +25470000000
+					li.footer__nav-list-item
+						img.footer__nav-icon(src="images/footer/email.svg", alt="")
+						a.footer__nav-link(href="mailto:bluelance@gmail.com")
+							| bluelance@gmail.com
+		p.footer__copyright 2022 Spacelance. All right reserved
+
+

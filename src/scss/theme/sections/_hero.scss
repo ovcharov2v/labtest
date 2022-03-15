@@ -1,0 +1,60 @@
+.hero {
+	padding-top: 148px;
+	background-image: url("../../../images/hero/bg.svg");
+	background-size: 100% 100%;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	overflow: hidden;
+
+	&__content-col { // .hero__content-col
+		width: 100%;
+		max-width: 54.4%;
+		padding-top: 105px;
+		padding-bottom: 260px;
+	}
+
+	&__title { // .hero__title
+		margin-top: 0;
+		margin-bottom: 17px;
+		font-size: 65px;
+		line-height: 98px;
+		font-weight: 700;
+	}
+
+	&__text { // .hero__text
+		margin-bottom: 83px;
+		max-width: 588px;
+	}
+
+	&__search-box { // .hero__search-box
+		display: flex;
+		width: 100%;
+	}
+
+	&__search { // .hero__search
+		flex-grow: 1;
+	}
+
+	&__hire-btn { // .hero__hire-btn
+		margin-right: 19px;
+	}
+
+	&__row { // .hero__row
+		display: flex;
+	}
+
+	&__img-col { // .hero__img-col
+		width: 100%;
+		max-width: 45.6%;
+		position: relative;
+	}
+
+	&__img { // .hero__img
+		position: absolute;
+		top: 12.9%;
+		left: 0%;
+		height: 100%;
+		max-height: 54.6%;
+		transform: scaleX(0.92);
+	}
+}

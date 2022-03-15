@@ -1,0 +1,31 @@
+.find {
+	&__img-col { // .find__img-col
+		position: relative;
+		max-width: calc(100% - 548px);
+	}
+
+	&__text-panel { // .find__text-panel
+		position: absolute;
+
+		&--top { // .find__text-panel--top
+			top: 38px;
+			right: 277px;
+			padding: 32px 13px 27px;
+		}
+
+		&--bottom { // .find__text-panel--bottom
+			top: 228px;
+			right: 70px;
+			padding: 28px 16px 23px;
+		}
+	}
+
+	&__content-col { // .find__content-col
+		max-width: 548px;
+		text-align: right;
+	}
+
+	&__title { // .find__title
+		margin-bottom: 20px;
+	}
+}

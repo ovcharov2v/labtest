@@ -1,0 +1,17 @@
+.section {
+	margin-bottom: 176px;
+
+	&__title { // .section__title
+		margin-top: 0;
+		font-size: 56px;
+		line-height: 84px;
+		font-weight: 500;
+	}
+
+	&__subtitle { // .section__subtitle
+		margin-top: 0;
+		font-size: 36px;
+		line-height: 54px;
+		color: $color-gray;
+	}
+}

@@ -1,0 +1,19 @@
+header.header
+	.header__box
+		a.header__logo-link(href="/", title="To home page")
+			picture
+				source(srcset='images/header/logo.webp', type="image/webp")
+				img.header__logo-img(src='images/header/logo.png', alt="")
+		nav.header__nav
+			ul.header__nav-list
+				li.header__nav-item
+					a.header__nav-link.header__nav-link--active(href="/") Home
+				li.header__nav-item
+					a.header__nav-link(href="/") Find work
+				li.header__nav-item
+					a.header__nav-link(href="/") Find Freelancers
+				li.header__nav-item
+					a.header__nav-link(href="/") Log In
+				li.header__nav-item
+					a.header__nav-link(href="/") Sign Up
+		a.button.button--round-corners.header__btn(href="/") Post a project

@@ -1,0 +1,122 @@
+prepend vars
+	- var title = "Home page";
+	- var description = "Home page"
+
+main.home
+	section.hero
+		.container
+			.hero__row
+				.hero__content-col
+					h1.hero__title Are you looking for Freelancers?
+					p.text.hero__text Hire Great Freelancers, Fast. Spacelance helps you hire elite freelancers at a moment's notice
+					.hero__search-box
+						a.button.hero__hire-btn(href="/") Hire a freelancer
+						form.search.hero__search(action="/")
+							input.search__input(placeholder="search freelance work")
+							button.search__submit(type="submit", aria-label="Search")
+								picture
+									source(srcset='images/hero/icon-search.webp', type="image/webp")
+									img.search__submit-icon(src='images/hero/icon-search.png', alt="")
+				.hero__img-col
+					picture
+						source(srcset='images/hero/illustration.webp', type="image/webp")
+						img.hero__img(src='images/hero/illustration.png', alt="")
+
+	// Section Steps
+	-
+		var steps = [
+				{title: 'Create Account', text: 'First you have to create a<br> account here'},
+				{title: 'Search work', text: 'Search the best<br> freelance work here'},
+				{title: 'Save and apply', text: 'Apply or save and<br> start your work'},
+			]
+	section.section.steps
+		.container
+			.steps__box
+				.row.steps__row
+					each val, index in steps
+						.steps__col
+							figure.step
+								.step__icon-box
+									picture
+										source(srcset='images/steps/img'+(index+1)+'.webp', type="image/webp")
+										img.step__icon(src='images/steps/img'+(index+1)+'.png', alt="")
+								figcaption
+									p.step__title= val.title
+									p.text.step__text !{val.text}
+
+	// Section Find
+	section.section.find
+		.container
+			.row
+				.col.find__img-col
+					picture
+						source(srcset='images/find/woman.webp', type="image/webp")
+						img.find__img(src='images/find/woman.png', alt="")
+					p.text.text-panel.find__text-panel.find__text-panel--top
+						strong.text-blue.text-panel__blue 500+
+						| freelancers
+					p.text.text-panel.find__text-panel.find__text-panel--bottom
+						strong.text-blue.text-panel__blue 300+
+						| freelance work Posted
+				.col.find__content-col
+					h2.section__title.find__title
+						| Find The Best
+						|
+						span.text-blue Freelancers
+						|
+						| Here
+					p.text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut erat bibendum ornare urna, cursus eget convallis. Feugiat imperdiet posuere justo, ultrices interdum sed orci nunc, mattis. Ipsum viverra viverra neque adipiscing arcu, quam dictum. Dui mi viverra dui, sit accumsan, tincidunt massa. Dui cras magnis.
+
+	// Section Works
+	section.section.works
+		.container
+			.works__top
+				.works__title-box
+					p.section__subtitle.works__subtitle The latest freelance work!
+					h2.section__title.works__title
+						| Recently Posted
+						|
+						span.text-blue Works
+				.works__slider-nav
+					button.works__slider-btn.works__slider-btn--prev
+						include ../../images/works/arrow.svg
+					button.works__slider-btn.works__slider-btn--next
+						include ../../images/works/arrow.svg
+			.swiper.works__slider
+				.swiper-wrapper.works__slider
+					// Slide
+					.swiper-slide.works__slide
+						.work.works__slide-content
+							picture
+								source(srcset='images/works/material-ui.webp', type="image/webp")
+								img.work__icon(src='images/works/material-ui.png', alt="")
+							h3.work__title Logo Design
+							p.text.work__description Need a professional logo with writing underneath for our jewellery company
+							.work__bottom
+								p.work__bid Highest bid
+									span.work__bid-number $500
+								a.work__link(href="/") Apply now
+					// Slide
+					.swiper-slide.works__slide
+						.work.works__slide-content
+							picture
+								source(srcset='images/works/canva-app.webp', type="image/webp")
+								img.work__icon(src='images/works/canva-app.png', alt="")
+							h3.work__title Graphic Design
+							p.text.work__description We need a graphic designer with UI/UX skills for our Furniture company
+							.work__bottom
+								p.work__bid Highest bid
+									span.work__bid-number $500
+								a.work__link(href="/") Apply now
+					// Slide
+					.swiper-slide.works__slide
+						.work.works__slide-content
+							picture
+								source(srcset='images/works/account.webp', type="image/webp")
+								img.work__icon(src='images/works/account.png', alt="")
+							h3.work__title Need a SEO
+							p.text.work__description Need a SEO for our company who will let our company to a higher level
+							.work__bottom
+								p.work__bid Highest bid
+									span.work__bid-number $300
+								a.work__link(href="/") Apply now

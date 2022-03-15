@@ -1,0 +1,30 @@
+.button {
+	display: inline-block;
+	padding: 20px 24px;
+	background-color: $color-blue;
+	border-radius: 10px;
+	border-width: 0;
+	font-size: 24px;
+	line-height: 36px;
+	font-weight: 700;
+	color: #fff;
+	letter-spacing: -0.005em;
+	text-align: center;
+	text-decoration: none;
+	white-space: nowrap;
+	cursor: pointer;
+	transition: background-color $default-transition;
+
+	&:hover {
+		background-color: darken($color-blue, 10%);
+	}
+
+	&--round-corners { // .button--round-corners
+		padding-top: 11px;
+		padding-bottom: 11px;
+		font-size: 20px;
+		line-height: 30px;
+		border-radius: 50px;
+		letter-spacing: initial;
+	}
+}

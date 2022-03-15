@@ -1,0 +1,19 @@
+.steps {
+	margin-top: -84px;
+
+	&__box { // .steps__box
+		padding: 36px 93px 42px;
+		border-radius: 10px;
+		background-color: #fff;
+		box-shadow: 0 20px 30px rgba(#000, .05);
+	}
+
+	&__row { // .steps__row
+		justify-content: space-between;
+	}
+
+	&__col { // .steps__col
+		min-width: 255px;
+		max-width: 33%;
+	}
+}
